@@ -13,6 +13,7 @@
 %% FONT
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\RequirePackage{bera}
 \RequirePackage{mathpazo}
 
 \newif\ifsinglesp@
@@ -42,9 +43,28 @@
 \fi%
 
 %% CAPTIONS
+\RequirePackage{caption}
+\DeclareCaptionStyle{italic}[justification=centering]
+ {labelfont={bf},textfont={it},labelsep=colon}
+\captionsetup[figure]{style=italic,format=hang,singlelinecheck=true}
+\captionsetup[table]{style=italic,format=hang,singlelinecheck=true}
 
 %% HEADERS AND FOOTERS
-
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\rfoot{\Large\sf\raisebox{-0.1cm}{\textbf{\thepage}}}
+%\lhead{\textsf{\expandafter{\@title}}}
+\lhead{\textsf{\leftmark}}
+\rhead{}
+\cfoot{}
+\setlength{\headheight}{15pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\sf\thepage} % except the center
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
 
 %% MATHS
 \RequirePackage{bm,amsmath}
@@ -59,8 +79,6 @@
 \renewcommand{\bottomfraction}{0.85}
 \renewcommand{\textfraction}{0.15}
 \renewcommand{\floatpagefraction}{0.7}
-
-\RequirePackage[section]{placeins}
 
 %% SECTION TITLES
 \RequirePackage[compact,sf,bf]{titlesec}
