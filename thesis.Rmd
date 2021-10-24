@@ -1,0 +1,250 @@
+---
+title: 'Tidy tools for supporting fluent workflow in temporal data analysis'
+author: 'Earo Wang'
+degreetype: 'Doctor of Philosophy'
+site: bookdown::bookdown_site
+degrees: 'B.Comm. (Hons), Monash University'
+bibliography: [bib/calendar.bib, bib/tsibble.bib, bib/mists.bib, bib/thesisrefs.bib]
+link-citations: yes
+---
+
+```{r initial, echo = FALSE, cache = FALSE, results = 'hide'}
+options("knitr.graphics.auto_pdf" = TRUE)
+library(knitr)
+opts_chunk$set(
+  warning = FALSE, message = FALSE, echo = FALSE,
+  fig.path = 'figure/', fig.align = 'center', fig.show = 'hold',
+  cache = TRUE, external = TRUE, comment = "#>", dpi = 300,
+  out.width = ifelse(is_html_output(), "100%", "\\textwidth"),
+  cache.path = ifelse(is_html_output(), 'cache-gitbook/', 'cache-pdfbook/')
+)
+hook_output <-  knit_hooks$get('output')
+knit_hooks$set(output = function(x, options) {
+  # this hook is used only when the linewidth option is not NULL
+  if (!is.null(n <- options$linewidth)) {
+    x = knitr:::split_lines(x)
+    # any lines wider than n should be wrapped
+    if (any(nchar(x) > n)) x = strwrap(x, width = n)
+    x = paste(x, collapse = '\n')
+  }
+  hook_output(x, options)
+})
+```
+
+`r if (knitr::is_latex_output()) '<!--'` 
+
+# Welcome {-}
+
+This is the website for my PhD thesis at Monash University (Australia), titled "Tidy tools for supporting fluent workflow in temporal data analysis".
+
+`r Sys.Date()`
+
+`r if (knitr::is_latex_output()) '-->'`
+
+<!--chapter:end:index.Rmd-->
+
+`r if (knitr::is_html_output()) '<!--'` 
+
+# Copyright notice {-}
+
+\textcopyright { }Yiru (Earo) Wang (\number\the\year). 
+
+I certify that I have made all reasonable efforts to secure copyright permissions for third-party content included in this thesis and have not knowingly added copyright content to my work without the owner's permission.
+
+\newpage
+
+`r if (knitr::is_html_output()) '-->'`
+
+<!--chapter:end:Rmd//00-a-copyright.Rmd-->
+
+# Abstract {-}
+
+This work is driven by the need for a conceptual framework to tackle temporal analyses in a data-centric workflow. Most research on temporal data focuses on modeling. Corresponding software requires very stringently formatted data, but does little in providing guidelines or tools for wrangling raw data into the required format. This has led to ad-hoc, and once-off solutions, which this research repairs.
+
+There are three original contributions for the temporal data analysis in this research. They are grounded in the spirit of exploratory data analysis for time-indexed data. The first contribution (Chapter \@ref(ch:calendar-vis)) is a new technique for visualizing data using a calendar layout. It is most useful when the data relates to daily human activity, and patterns can be explored in relation to people's schedules. The second contribution (Chapter \@ref(ch:tsibble)) is a new data abstraction which streamlines transformation, visualization, and modeling in temporal contexts. This "tsibble" object is a data infrastructure forming the foundation of temporal data pipelines. The third contribution (Chapter \@ref(ch:mists)) is to equip analysts with exploratory and explanatory tools for discovering missing patterns in time, and thus facilitating decisions on appropriate imputation methods for further downstream analysis.
+
+\newpage
+
+<!--chapter:end:Rmd//00-b-abstract.Rmd-->
+
+`r if (knitr::is_html_output()) '<!--'` 
+
+\newpage
+
+# Declaration {-}
+
+I hereby declare that this thesis contains no material which has been accepted for the award of any other degree or diploma at any university or equivalent institution and that, to the best of my knowledge and belief, this thesis contains no material previously published or written by another person, except where due reference is made in the text of the thesis. 
+
+This thesis includes 3 publications, two of which have been revised and resubmitted and one not yet submitted. The core theme of the thesis is "tidy tools for temporal data". The ideas, development and writing up of all the papers in the thesis were the principal responsibility of myself, the student, working within the Department of Econometrics and Business Statistics under the supervision of Professor Dianne Cook and Professor Rob J Hyndman.
+	
+The inclusion of co-authors reflects the fact that the work came from active collaboration between researchers and acknowledges input into team-based research.
+
+In the case of Chapter 2, 3 and 4 my contribution to the work involved the following:
+
+\begin{table}
+\centering\footnotesize\tabcolsep=0.12cm
+\begin{tabular}{|p{1cm}|p{2cm}|p{1.5cm}|p{3.5cm}|p{3.5cm}|p{1.5cm}|}
+\hline
+\RaggedRight\textbf{Thesis Chapter}  & \RaggedRight\textbf{Publication Title}  & \RaggedRight\textbf{Status (published, in press, accepted or returned for revision)}  & \RaggedRight\textbf{Nature and} {\%} \RaggedRight\textbf{of student contribution} & \RaggedRight\textbf{Co-author name(s) Nature and} {\%} \RaggedRight\textbf{of Co-author’s contribution} & \RaggedRight\textbf{Co-author(s), Monash student Y/N} \\ \hline
+2 & Calendar-based graphics for visualizing people's daily schedules & Returned for revision & 70\%. Concept and developing software and writing first draft & (1) Dianne Cook, Concept and input into manuscript 20\% (2) Rob J Hyndman, input into manuscript 10\% & \multicolumn{1}{c|}{N} \\
+\hline
+3 & A new tidy data structure to support exploration and modeling of temporal data & Returned for revision & 80\%. Concept and developing software and writing first draft & (1) Dianne Cook, input into manuscript 15\% (2) Rob J Hyndman, input into manuscript 5\% & \multicolumn{1}{c|}{N} \\
+\hline
+4 & Data representation, visual and analytical techniques for demystifying temporal missing data & To be submitted & 80\%. Concept and developing software and writing first draft & (1) Dianne Cook, Concept and input into manuscript 15\% (2) Rob J Hyndman, input into manuscript 5\% & \multicolumn{1}{c|}{N} \\
+\hline
+\end{tabular}
+\end{table}
+
+\FloatBarrier
+
+I have not renumbered sections of submitted or published papers in order to generate a consistent presentation within the thesis.
+
+\textbf{Student name:} Yiru (Earo) Wang
+
+\textbf{Student signature:}
+
+```{r signature, out.width = "20%", fig.align = "left", eval = file.exists("img/signature.png")}
+knitr::include_graphics("img/signature.png")
+```
+
+\textbf{Date:} `r Sys.Date()`
+
+`r if (knitr::is_html_output()) '-->'`
+
+<!--chapter:end:Rmd//00-c-declaration.Rmd-->
+
+# Acknowledgements {-}
+
+This thesis would not be possible without many people.
+
+First and foremost, I would like to express my gratitude to my supervisors, Dianne Cook and Rob J Hyndman. They are outstanding supervisors, providing excellent insights on statistical computing and graphics during our weekly supervisory meetings. I'm deeply impressed by their dynamics, enthusiasm, and visions about open source software and data science, all of which have formed the support and encouragement for me to continue with this non-traditional research path.
+
+I thank Heike Hofmann for hosting me at Iowa State University during the summer of 2018. I enjoyed many discussions with Heike, where I received brilliant questions and insightful advice on my research. I thank Stuart Lee and Mitchell O'Hara-Wild for countless conversations on software development, that helped to shape this thesis. I thank David Frazier for being the best pingpong partner, truly boosting the creative thinking process.
+
+I thank Emi Tanaka for sending me PRs for proofreading my thesis on Github, unlocking the power of an open-sourced research compendium. I thank Wenjing Wang and Carson Sievert for being so helpful in the early days of my PhD. I thank the R community, the tidyverse team, and all NUMBATs for ongoing inspiration.
+
+Last but not least, I'd like to thank my mother for her unceasing love.
+
+<!--chapter:end:Rmd//00-d-acknowlegements.Rmd-->
+
+# Preface {-}
+
+Chapter \@ref(ch:calendar-vis) has been tentatively accepted by the *Journal of Computational and Graphical Statistics* for the second-round revision. It has won the ASA Statistical Graphics Student Paper Award and the ACEMS Business Analytics Prize in 2018. Chapter \@ref(ch:tsibble) has been accepted by the *Journal of Computational and Graphical Statistics*. The accompanying R package **tsibble** has won the John Chambers Statistical Software Award in 2019. Chapter \@ref(ch:mists) is yet to be submitted.
+
+### Open and reproducible research {-}
+
+This thesis is written in R Markdown [@rmarkdown] with **bookdown** [@bookdown], using **renv** [@renv] to create reproducible environments. The online version of this thesis is hosted at <https://thesis.earo.me>, powered by [Netlify](http://netlify.com). All materials (including the data sets and source files) required to reproduce this document can be found at the Github repository <https://github.com/earowang/thesis>.
+
+### License {-}
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+The code used in this document is available under the [MIT license](https://opensource.org/licenses/MIT).
+
+\clearpage\pagenumbering{arabic}\setcounter{page}{0}
+
+<!--chapter:end:Rmd//00-e-preface.Rmd-->
+
+# Introduction {#ch:intro}
+
+
+
+
+<!--chapter:end:Rmd//01-intro.Rmd-->
+
+# Calendar-based graphics for visualizing people's daily schedules {#ch:calendar-vis}
+
+
+<!--chapter:end:Rmd//02-calendar-vis.Rmd-->
+
+# A new tidy data structure to support exploration and modeling of temporal data {#ch:tsibble}
+
+
+<!--chapter:end:Rmd//03-tsibble.Rmd-->
+
+# Data representation, visual and analytical techniques for demystifying temporal missing data {#ch:mists}
+
+
+<!--chapter:end:Rmd//04-mists.Rmd-->
+
+# Conclusion and future plans {#ch:conclusion}
+
+The three papers assembled in this thesis share a common theme of exploratory analysis for temporal data using tidy tools. Chapter \@ref(ch:calendar-vis), "Calendar-based graphics for visualizing people's daily schedules", described a new calendar-based display. Chapter \@ref(ch:tsibble), "A new tidy data structure to support exploration and modeling of temporal data", proposed a new temporal data abstraction. Chapter \@ref(ch:mists), "Data representation, visual and analytical techniques for demystifying temporal missing data", explored missing data in time. These papers are bundled with software. In this conclusion, I will briefly summarize each package and their impact, and discuss the future directions of my research.
+
+```{r software-initial, echo = FALSE, cache = FALSE, include = FALSE}
+read_chunk('scripts/software.R')
+```
+
+## Software development
+
+```{r software-impact}
+```
+
+A particular emphasis of this thesis is on translating research methodologies in the form of open source R packages: **sugrrants**, **tsibble**, and **mists**. Figure \@ref(fig:software-ghcommits) gives an overview of my Git commits to these repositories, and Figure \@ref(fig:software-downloads) shows the daily downloads of the packages from the RStudio mirror (one of 90 CRAN mirrors) since they were available on CRAN.
+
+```{r software-ghcommits, fig.cap = "(ref:software-ghcommits-cap)"}
+include_graphics("img/pkg-commits.png")
+```
+
+(ref:software-ghcommits-cap) Patterns of my package development effort during my PhD years based on Git commits to three repositories, sugrrants, tsibble, and mists. Scatter plots of weekly totals are overlaid with a loess smoother. The **sugrrants** package was the first project with much initial energy, followed by small constant maintenance. The **tsibble** package has been a major project with ongoing constant development and bursts of effort in response to users' feedback. The **mists** package has been a recent intense project.
+
+```{r software-downloads, fig.height = 3, fig.cap = "(ref:software-downloads-cap)"}
+```
+
+(ref:software-downloads-cap) Impact of these works (sugrrants and tsibble) as measured by daily downloads (on square root scale) from the RStudio mirror since they landed on CRAN. The **tsibble** package has an increasing trend, suggesting the steady adoption of the new data structure.
+
+### sugrrants
+
+The **sugrrants** package implements the idea of displaying data in the familiar calendar style using `frame_calendar()` and `facet_calendar()`. The research article, a shorter version of Chapter \@ref(ch:calendar-vis), has been awarded the best student paper prize from ASA Sections on Statistical Computing and Statistical Graphics and ACEMS Business Analytics in 2018. There has been a grand total of `r format(sum(sugrrants_dl$count), big.mark = ",")` downloads from the RStudio mirror dating from 2017-07-28 to 2019-09-20; and it has been starred 48 times on Github so far. The homepage at <https://pkg.earo.me/sugrrants> contains detailed documentation and a vignette on `frame_calendar()`.
+
+### tsibble
+
+The **tsibble** package provides a data infrastructure and a domain specific language in R for representing and manipulating tidy temporal data. This package provides the fundamental architecture that other temporal tools will be built upon. For example, a new suite of time series analysis packages, titled ["tidyverts"](https://github.com/tidyverts), have been developed for the new "tsibble" object. The **tsibble** package has won the 2019 John Chambers Statistical Software Award from the ASA Sections on Statistical Computing and Statistical Graphics. It has been downloaded `r format(sum(tsibble_dl$count), big.mark = ",")` times from the RStudio mirror since it landed on CRAN; and it has received 241 stars on Github. These metrics are the indicators of my research impact, the recognition by professionals, and the uptakes by users. The website (<https://tsibble.tidyverts.org>) includes full documentation and three vignettes about the package usage.
+
+### mists
+
+The **mists** package aims at exploring missing values for temporal data analytically and graphically. It implements a compact abstraction for efficiently indexing missing data in time, along with numerical and visual methods. It also provides new missing data polishing techniques. The Github repository has received 22 stars, but the package is not on CRAN yet. The documentation site is available at <https://pkg.earo.me/mists>.
+
+## Future work
+
+### Process for generating missing data in time
+
+Missing values in multivariate data are typically characterized by the overall, row-wise, and column-wise numbers of missings. However, none of these captures the dynamics in temporal data. A well-defined characteristic is need to characterize temporal missingness, and this could possibly shed light on the processes for generating and imputing missing data in time.
+
+Generating temporal missingness can be decomposed into two steps: (1) injecting missings at time points to reflect the functional form of time, and (2) generating the corresponding run lengths to reflect the temporal dependency. I plan to expand on Chapter \@ref(ch:mists) to generalize missing data generating processes in temporal contexts. Because of the evolving nature of time, the underpinning mechanisms of missing data may change from one period to another. Applying the new characteristic to the data, on a rolling window basis, could indicate the missing data status and thus lead to appropriate missing data remedies.
+
+### Visual methods for temporal data of nesting and crossing interactions
+
+A collection of time series are often structured in a way that allows nesting and crossing interactions [@fpp]. For example, a manufacturing company can add up every store's sales by region, by state and by country, which gives a strictly hierarchical time series; alternatively, they can gather the sales based on common attributes such as store, brand, price range and so forth, which leads to a crossed configuration. Nesting is a special case of crossing, with parent-children relations involved. Temporal information such as date-times is often also intrinsically hierarchical, seconds nested within minutes, hours, and etc. The new tsibble structure has the neat capability of supporting these structural embeddings.
+
+Numerous nesting and crossing combinations can yield unwieldy plots, in many of which an abundance of information is possibly buried. Focus-plus-context visualization with interactivity comes to the rescue. Dual contexts, structurally informative subjects, and time provide the source and visual clues for elegant navigation. Interactions on contextual plots control what is to be visualized in the main plots. Many kinds of visual displays can be generated to progressively build a richer data picture through guided or self explorations.
+
+## Final words
+
+Presentations, package development, and writing are the three primary types of activities that shape this thesis. I have developed a habit of using Git and Github to track and synchronize my academic work since I started the PhD program. All commits are grouped by the activity types, with annotations of important milestones, shown in Figure \@ref(fig:phd-ghcommits). It has been a fruitful program.
+
+```{r phd-ghcommits, fig.cap = "(ref:phd-ghcommits-cap)", fig.pos = "ht"}
+include_graphics("img/phd-commits.png")
+```
+
+(ref:phd-ghcommits-cap) Beeswarm plots of my Git commits split by the activity types during my PhD years, labeled with some milestones.
+
+<!--chapter:end:Rmd//05-conclusion.Rmd-->
+
+# (APPENDIX) Appendix {-}
+
+# Data dictionary
+
+```{r wdi-data-dict}
+```
+
+(ref:wdi-data-dict) Data dictionary for the World Development Indicators.
+
+<!--chapter:end:Rmd//06-appendix.Rmd-->
+
+`r if (knitr::is_html_output()) '# Bibliography {-}'`
+
+<!--chapter:end:Rmd//99-references.Rmd-->
+
