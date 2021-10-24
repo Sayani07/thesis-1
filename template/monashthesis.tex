@@ -7,6 +7,16 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Add any LaTeX packages and other preamble here if required
+\usepackage{mathtools,amssymb,booktabs,amsthm,todonotes,colortbl}
+\def\mod{~\text{mod}~}
+\usepackage{mathptmx}
+\usepackage{caption}
+\newtheorem{defn}{Definition}
+\DeclareCaptionStyle{italic}{labelfont={bf},textfont={it},labelsep=colon}
+\captionsetup[figure]{style=italic,format=hang,singlelinecheck=true}
+\captionsetup[table]{style=italic,format=hang,singlelinecheck=true}
+\def\novspacing{\setlength{\aboverulesep}{0pt}\setlength{\belowrulesep}{0pt}}
+\def\vspacing{\setlength{\aboverulesep}{0.4ex}\setlength{\belowrulesep}{0.65ex}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \author{$author$}
