@@ -12,3 +12,4 @@ img/*.png
 *.bbl
 thesis\.tex
 report/ExaminerReports.pdf
+_thesis/*.html

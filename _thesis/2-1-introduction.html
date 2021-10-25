@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.1 Introduction | Tidy tools for supporting fluent workflow in temporal data analysis</title>
-  <meta name="description" content="2.1 Introduction | Tidy tools for supporting fluent workflow in temporal data analysis" />
+  <title>2.1 Introduction | Visualization and analysis of probability distributions of large temporal data</title>
+  <meta name="description" content="2.1 Introduction | Visualization and analysis of probability distributions of large temporal data" />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.1 Introduction | Tidy tools for supporting fluent workflow in temporal data analysis" />
+  <meta property="og:title" content="2.1 Introduction | Visualization and analysis of probability distributions of large temporal data" />
   <meta property="og:type" content="book" />
   
   
@@ -16,12 +16,12 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.1 Introduction | Tidy tools for supporting fluent workflow in temporal data analysis" />
+  <meta name="twitter:title" content="2.1 Introduction | Visualization and analysis of probability distributions of large temporal data" />
   
   
   
 
-<meta name="author" content="Earo Wang" />
+<meta name="author" content="Sayani Gupta" />
 
 
 
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="2-ch-calendar-vis.html"/>
-<link rel="next" href="2-2-sec-algorithm.html"/>
+<link rel="prev" href="2-ch-gravitas.html"/>
+<link rel="next" href="2-2-sec-linear-time.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -46,71 +46,9 @@
 
 
 
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <link rel="stylesheet" href="template/style.css" type="text/css" />
 </head>
@@ -132,39 +70,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="1-ch-intro.html"><a href="1-ch-intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
-<li class="chapter" data-level="1.1" data-path="1-1-sec-calendar-vis.html"><a href="1-1-sec-calendar-vis.html"><i class="fa fa-check"></i><b>1.1</b> Calendar-based graphics</a></li>
-<li class="chapter" data-level="1.2" data-path="1-2-sec-tsibble.html"><a href="1-2-sec-tsibble.html"><i class="fa fa-check"></i><b>1.2</b> Tidy temporal data structure</a></li>
-<li class="chapter" data-level="1.3" data-path="1-3-sec-mists.html"><a href="1-3-sec-mists.html"><i class="fa fa-check"></i><b>1.3</b> Missingness in time</a></li>
-<li class="chapter" data-level="1.4" data-path="1-4-summary.html"><a href="1-4-summary.html"><i class="fa fa-check"></i><b>1.4</b> Summary</a></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="2-ch-calendar-vis.html"><a href="2-ch-calendar-vis.html"><i class="fa fa-check"></i><b>2</b> Calendar-based graphics for visualizing people’s daily schedules</a><ul>
+<li class="chapter" data-level="1" data-path="1-ch-intro.html"><a href="1-ch-intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="2-ch-gravitas.html"><a href="2-ch-gravitas.html"><i class="fa fa-check"></i><b>2</b> Calendar-based graphics for visualizing people’s daily schedules</a><ul>
 <li class="chapter" data-level="2.1" data-path="2-1-introduction.html"><a href="2-1-introduction.html"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
-<li class="chapter" data-level="2.2" data-path="2-2-sec-algorithm.html"><a href="2-2-sec-algorithm.html"><i class="fa fa-check"></i><b>2.2</b> Creating a calendar display</a></li>
-<li class="chapter" data-level="2.3" data-path="2-3-sec-case.html"><a href="2-3-sec-case.html"><i class="fa fa-check"></i><b>2.3</b> Case study</a></li>
-<li class="chapter" data-level="2.4" data-path="2-4-sec-discussion.html"><a href="2-4-sec-discussion.html"><i class="fa fa-check"></i><b>2.4</b> Discussion</a></li>
-<li class="chapter" data-level="" data-path="acknowledgements-1.html"><a href="acknowledgements-1.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="3-ch-tsibble.html"><a href="3-ch-tsibble.html"><i class="fa fa-check"></i><b>3</b> A new tidy data structure to support exploration and modeling of temporal data</a><ul>
-<li class="chapter" data-level="3.1" data-path="3-1-sec-intro.html"><a href="3-1-sec-intro.html"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
-<li class="chapter" data-level="3.2" data-path="3-2-sec-str.html"><a href="3-2-sec-str.html"><i class="fa fa-check"></i><b>3.2</b> Data structures</a></li>
-<li class="chapter" data-level="3.3" data-path="3-3-sec-semantics.html"><a href="3-3-sec-semantics.html"><i class="fa fa-check"></i><b>3.3</b> Contextual semantics</a></li>
-<li class="chapter" data-level="3.4" data-path="3-4-sec-pipeline.html"><a href="3-4-sec-pipeline.html"><i class="fa fa-check"></i><b>3.4</b> Temporal data pipelines</a></li>
-<li class="chapter" data-level="3.5" data-path="3-5-sec-software.html"><a href="3-5-sec-software.html"><i class="fa fa-check"></i><b>3.5</b> Software structure and design decisions</a></li>
-<li class="chapter" data-level="3.6" data-path="3-6-sec-cases.html"><a href="3-6-sec-cases.html"><i class="fa fa-check"></i><b>3.6</b> Case studies</a></li>
-<li class="chapter" data-level="3.7" data-path="3-7-sec-conclusion.html"><a href="3-7-sec-conclusion.html"><i class="fa fa-check"></i><b>3.7</b> Conclusion and future work</a></li>
+<li class="chapter" data-level="2.2" data-path="2-2-sec-linear-time.html"><a href="2-2-sec-linear-time.html"><i class="fa fa-check"></i><b>2.2</b> Linear time granularities</a></li>
+<li class="chapter" data-level="2.3" data-path="2-3-sec-cyclic-gran.html"><a href="2-3-sec-cyclic-gran.html"><i class="fa fa-check"></i><b>2.3</b> Cyclic time granularities</a></li>
+<li class="chapter" data-level="2.4" data-path="2-4-sec-data-structure.html"><a href="2-4-sec-data-structure.html"><i class="fa fa-check"></i><b>2.4</b> Data structure</a></li>
+<li class="chapter" data-level="2.5" data-path="2-5-sec-visualization.html"><a href="2-5-sec-visualization.html"><i class="fa fa-check"></i><b>2.5</b> Visualization</a></li>
+<li class="chapter" data-level="2.6" data-path="2-6-sec-application.html"><a href="2-6-sec-application.html"><i class="fa fa-check"></i><b>2.6</b> Applications</a></li>
+<li class="chapter" data-level="2.7" data-path="2-7-sec-discussion.html"><a href="2-7-sec-discussion.html"><i class="fa fa-check"></i><b>2.7</b> Discussion</a></li>
 <li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="2.8" data-path="2-8-supplementary-materials.html"><a href="2-8-supplementary-materials.html"><i class="fa fa-check"></i><b>2.8</b> Supplementary Materials</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="4-ch-mists.html"><a href="4-ch-mists.html"><i class="fa fa-check"></i><b>4</b> Data representation, visual and analytical techniques for demystifying temporal missing data</a><ul>
-<li class="chapter" data-level="4.1" data-path="4-1-sec-mists-intro.html"><a href="4-1-sec-mists-intro.html"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
-<li class="chapter" data-level="4.2" data-path="4-2-sec-mists-categories.html"><a href="4-2-sec-mists-categories.html"><i class="fa fa-check"></i><b>4.2</b> Categories of temporal missing data</a></li>
-<li class="chapter" data-level="4.3" data-path="4-3-sec-mists-na-rle.html"><a href="4-3-sec-mists-na-rle.html"><i class="fa fa-check"></i><b>4.3</b> New data abstraction and operations for missing data in time</a></li>
-<li class="chapter" data-level="4.4" data-path="4-4-sec-mists-vis.html"><a href="4-4-sec-mists-vis.html"><i class="fa fa-check"></i><b>4.4</b> Visual methods for exploring temporal missingness</a></li>
-<li class="chapter" data-level="4.5" data-path="4-5-sec-mists-polish.html"><a href="4-5-sec-mists-polish.html"><i class="fa fa-check"></i><b>4.5</b> Scaling up to large collections of temporal data</a></li>
-<li class="chapter" data-level="4.6" data-path="4-6-sec-mists-data.html"><a href="4-6-sec-mists-data.html"><i class="fa fa-check"></i><b>4.6</b> Applications</a></li>
-<li class="chapter" data-level="4.7" data-path="4-7-sec-mists-conclusion.html"><a href="4-7-sec-mists-conclusion.html"><i class="fa fa-check"></i><b>4.7</b> Conclusion</a></li>
-<li class="chapter" data-level="" data-path="acknowledgements-2.html"><a href="acknowledgements-2.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
-</ul></li>
+<li class="chapter" data-level="3" data-path="3-ch-tsibble.html"><a href="3-ch-tsibble.html"><i class="fa fa-check"></i><b>3</b> A new tidy data structure to support exploration and modeling of temporal data</a></li>
+<li class="chapter" data-level="4" data-path="4-ch-mists.html"><a href="4-ch-mists.html"><i class="fa fa-check"></i><b>4</b> Data representation, visual and analytical techniques for demystifying temporal missing data</a></li>
 <li class="chapter" data-level="5" data-path="5-ch-conclusion.html"><a href="5-ch-conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion and future plans</a><ul>
 <li class="chapter" data-level="5.1" data-path="5-1-software-development.html"><a href="5-1-software-development.html"><i class="fa fa-check"></i><b>5.1</b> Software development</a></li>
 <li class="chapter" data-level="5.2" data-path="5-2-future-work.html"><a href="5-2-future-work.html"><i class="fa fa-check"></i><b>5.2</b> Future work</a></li>
@@ -185,7 +104,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Tidy tools for supporting fluent workflow in temporal data analysis</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Visualization and analysis of probability distributions of large temporal data</a>
           </h1>
         </div>
 
@@ -195,43 +114,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="introduction" class="section level2">
 <h2><span class="header-section-number">2.1</span> Introduction</h2>
-<p>A new method for organizing and visualizing temporal data, collected at sub-daily intervals, into a calendar layout is developed. The format is created using modular arithmetic, giving a restructuring of the data that can then be integrated into a data pipeline. The core component of the pipeline is to visualize the resulting data using the grammar of graphics <span class="citation">(Wilkinson <a href="bibliography.html#ref-wilkinson2006grammar">2005</a>; Wickham <a href="bibliography.html#ref-wickham2009ggplot2">2009</a>)</span>, as used in <strong>ggplot2</strong> <span class="citation">(H. Wickham, Chang, et al. <a href="bibliography.html#ref-R-ggplot2">2019</a>)</span>, where plots are defined as a functional mapping from variables in the data to graphical elements. The data restructuring approach is consistent with the tidy data principles available in the <strong>tidyverse</strong> suite of tools <span class="citation">(Wickham <a href="bibliography.html#ref-R-tidyverse">2017</a>)</span>. The methods are implemented in a new R package called <strong>sugrrants</strong> <span class="citation">(Wang, Cook, and Hyndman <a href="bibliography.html#ref-R-sugrrants">2019</a><a href="bibliography.html#ref-R-sugrrants">b</a>)</span>.</p>
-<p>The purpose of the calendar-based visualization is to provide insights into human activities, especially relative to events such as work days, weekends, holidays, and special events. This work was originally motivated by studying foot traffic in the city of Melbourne, Australia <span class="citation">(City of Melbourne <a href="bibliography.html#ref-ped">2017</a>)</span>. There are many sensors installed across the inner-city area, that count pedestrians every hour (Figure <a href="2-1-introduction.html#fig:ped-map">2.1</a>). Data from 43 sensors in 2016 is analyzed here. This data can shed light on people’s daily rhythms, and assist the city administration and local businesses with event planning and operational management. Patterns relative to special events (such as public holidays and recurring cultural/sporting events) would be worth studying in comparison to regular days, but conventional displays of time series data may bury this detail.</p>
-<p>A routine examination of the data would involve constructing a time series plot to examine the temporal patterns. The faceted plots in Figure <a href="2-1-introduction.html#fig:time-series-plot">2.2</a> give an overall picture of the foot traffic at three different sensors in 2016. Further faceting by day of the week (Figure <a href="2-1-introduction.html#fig:facet-time">2.3</a>) provides a better view of the daily and sub-daily (hourly) pedestrian patterns. Flagstaff Station has a strong commuter pattern, with peaks in the morning and evening, and no pedestrians on the weekend. Around the State Library there are pedestrians walking around during the day, and an unusually large number on one Saturday night and Sunday morning. Birrarung Marr has a varied pedestrian pattern, with very different numbers of people on different days and times.</p>
-<p>Faceting, initially called trellis displays <span class="citation">(Becker, Cleveland, and Shyu <a href="bibliography.html#ref-becker_visual_1996">1996</a>)</span>, is an example of a small multiple <span class="citation">(Tufte <a href="bibliography.html#ref-tufte1983visual">1983</a>)</span>, where different subsets of the same data are displayed across one or more conditioning variables. It allows the comparison of subsets. Faceting can also be thought of as a simple ensemble graphic <span class="citation">(Unwin and Valero-Mora <a href="bibliography.html#ref-unwin_ensemble_2018">2018</a>)</span>. It is a homogeneous collection of plots, whereas the ensemble graphics broadly organize related plots for a data set together into one display.</p>
-<div class="figure" style="text-align: center"><span id="fig:ped-map"></span>
-<img src="figure/ped-map-1.png" alt="Google map of the Melbourne city area, gray dots indicate sensor locations. The three locations highlighted will be analyzed in the paper: the State Library is a public library; Flagstaff Station is a train station, closed on non-work days; Birrarung Marr is an outdoor park hosting many cultural and sports events." width="70%" />
-<p class="caption">
-Figure 2.1: Google map of the Melbourne city area, gray dots indicate sensor locations. The three locations highlighted will be analyzed in the paper: the State Library is a public library; Flagstaff Station is a train station, closed on non-work days; Birrarung Marr is an outdoor park hosting many cultural and sports events.
-</p>
-</div>
-
-<div class="figure" style="text-align: center"><span id="fig:time-series-plot"></span>
-<img src="figure/time-series-plot-1.png" alt="Time series plots showing 2016 pedestrian counts, measured by three different sensors in the city of Melbourne. Small multiples of lines show that the foot traffic varies at one location to another. The spike in counts at the State Library corresponds to the timing of the event “White Night”, where there were many people taking part in activities in the city throughout the night. A relatively persistent pattern repeats from one week to another at Flagstaff Station. Birrarung Marr looks rather noisy and spiky, with several runs of missing records." width="100%" />
-<p class="caption">
-Figure 2.2: Time series plots showing 2016 pedestrian counts, measured by three different sensors in the city of Melbourne. Small multiples of lines show that the foot traffic varies at one location to another. The spike in counts at the State Library corresponds to the timing of the event “White Night”, where there were many people taking part in activities in the city throughout the night. A relatively persistent pattern repeats from one week to another at Flagstaff Station. Birrarung Marr looks rather noisy and spiky, with several runs of missing records.
-</p>
-</div>
-
-<div class="figure" style="text-align: center"><span id="fig:facet-time"></span>
-<img src="figure/facet-time-1.png" alt="Hourly pedestrian counts for 2016, faceted by sensors, and days of the week. The focus is on time of day and day of week across the sensors. Daily commuter patterns at Flagstaff Station, the variability of the foot traffic at Birrarung Marr, and the consistent pedestrian behavior at the State Library, can be seen." width="100%" />
-<p class="caption">
-Figure 2.3: Hourly pedestrian counts for 2016, faceted by sensors, and days of the week. The focus is on time of day and day of week across the sensors. Daily commuter patterns at Flagstaff Station, the variability of the foot traffic at Birrarung Marr, and the consistent pedestrian behavior at the State Library, can be seen.
-</p>
-</div>
-
-<p>The work is inspired by <span class="citation">Wickham et al. (<a href="bibliography.html#ref-Wickham2012glyph">2012</a>)</span>, which uses modular arithmetic to display spatio-temporal data as glyphs on maps. It is also related to recent work by <span class="citation">Hafen (<a href="bibliography.html#ref-R-geofacet">2019</a>)</span> which provides methods in the <strong>geofacet</strong> R package to arrange data plots into a grid, while preserving the geographical position. Both of these show data in a spatial context.</p>
-<p>In contrast, calendar-based graphics unpack the temporal variable, at different resolutions, to digest multiple seasonalities and special events. There are some existing works in this area. For example, <span class="citation">Van Wijk and Van Selow (<a href="bibliography.html#ref-VanWijkCluster1999">1999</a>)</span> developed a calendar view of the heatmap to represent the number of employees in the work place over a year, where colors indicate different clusters derived from the days. It contrasts weekdays and weekends, highlights public holidays, and presents other known seasonal variation such as school vacations, all of which have influence over the turn-outs in the office. Some variants of calendar-based heatmaps have been implemented in R packages: <strong>TimeProjection</strong> <span class="citation">(Wong <a href="bibliography.html#ref-R-TimeProjection">2013</a>)</span>, <strong>ggTimeSeries</strong> <span class="citation">(Kothari and Ather <a href="bibliography.html#ref-R-ggTimeSeries">2016</a>)</span>, and <strong>ggcal</strong> <span class="citation">(Jacobs <a href="bibliography.html#ref-R-ggcal">2017</a>)</span>. However, these techniques are limited to color-encoding graphics and are unable to use time scales smaller than a day. Time of day, which serves as one of the most important aspects in explaining substantial variations arising from the pedestrian sensor data, will be neglected through daily aggregation. Color-encoding is also low on the hierarchy of optimal variable mapping <span class="citation">(Cleveland and McGill <a href="bibliography.html#ref-cleveland1984graphical">1984</a>; Lam, Munzner, and Kincaid <a href="bibliography.html#ref-lam2007overview">2007</a>)</span>.</p>
-<p>The proposed algorithm goes beyond the calendar-based heatmap. The approach is developed with three conditions in mind: (1) to display time-of-day variation in addition to longer temporal components such as day-of-week and day-of-year; (2) to incorporate lines and other types of glyphs into the graphical toolkit for the calendar layout; (3) to accentuate unusual patterns, such as those related to special events, for viewers. The proposed algorithm has been implemented in the <code>frame_calendar()</code> and <code>facet_calendar()</code> functions in the <strong>sugrrants</strong> package using R.</p>
-<p>The remainder of the paper is organized as follows. Section <a href="2-2-sec-algorithm.html#sec:algorithm">2.2</a> details the construction of the calendar layout in depth. It describes the algorithms of data transformation (Section <a href="2-2-sec-algorithm.html#sec:transformation">2.2.1</a>), the available options (Section <a href="2-2-sec-algorithm.html#sec:opt">2.2.2</a>), variations of its usage (Section <a href="2-2-sec-algorithm.html#sec:variations">2.2.3</a>), including the full faceting extension equipped with formal labels and axes (Section <a href="2-2-sec-algorithm.html#sec:facet-calendar">2.2.3.5</a>). An analysis of half-hourly household energy consumption, using the calendar display, is illustrated in a case study in Section <a href="2-3-sec-case.html#sec:case">2.3</a>. Section <a href="2-4-sec-discussion.html#sec:discussion">2.4</a> discusses the limitations of calendar displays and possible new directions.</p>
+<p>Temporal data are available at various resolutions depending on the context. Social and economic data are often collected and reported at coarse temporal scales such as monthly, quarterly or annually. With recent advancements in technology, more and more data are recorded at much finer temporal scales. Energy consumption may be collected every half an hour, energy supply may be collected every minute, and web search data might be recorded every second. As the frequency of data increases, the number of questions about the periodicity of the observed variable also increases. For example, data collected at an hourly scale can be analyzed using coarser temporal scales such as days, months or quarters. This approach requires deconstructing time in various possible ways called time granularities <span class="citation">(Aigner et al. <a href="bibliography.html#ref-aigner2011visualization" role="doc-biblioref">2011</a>)</span>.</p>
+<p>It is important to be able to navigate through all of these time granularities to have multiple perspectives on the periodicity of the observed data. This aligns with the notion of exploratory data analysis (EDA) <span class="citation">(Tukey <a href="bibliography.html#ref-Tukey1977-jx" role="doc-biblioref">1977</a>)</span> which emphasizes the use of multiple perspectives on data to help formulate hypotheses before proceeding to hypothesis testing. Visualizing probability distributions conditional on one or more granularities is an indispensable tool for exploration. Analysts are expected to comprehensively explore the many ways to view and consider temporal data. However, the plethora of choices and the lack of a systematic approach to do so quickly can make the task overwhelming.</p>
+<p>Calendar-based graphics <span class="citation">(E. Wang, Cook, and Hyndman <a href="bibliography.html#ref-wang2020calendar" role="doc-biblioref">2020</a><a href="bibliography.html#ref-wang2020calendar" role="doc-biblioref">b</a>)</span> are useful in visualizing patterns in the weekly and monthly structure and are helpful when checking for the effects of weekends or special days. Any temporal data at sub-daily resolution can also be displayed using this type of faceting <span class="citation">(Wickham <a href="bibliography.html#ref-Wickham2009pk" role="doc-biblioref">2016</a>)</span> with days of the week, month of the year, or another sub-daily deconstruction of time. But calendar effects are not restricted to conventional day-of-week or month-of-year deconstructions. There can be many different time deconstructions, based on the calendar or on categorizations of time granularities.</p>
+<p>Linear time granularities (such as hours, days, weeks and months) respect the linear progression of time and are non-repeating. One of the first attempts to characterize these granularities is due to <span class="citation">Bettini et al. (<a href="bibliography.html#ref-Bettini1998-ed" role="doc-biblioref">1998</a>)</span>. However, the definitions and rules defined are inadequate for describing non-linear granularities. Hence, there is a need to define some new time granularities, that can be useful in visualizations. Cyclic time granularities can be circular, quasi-circular or aperiodic. Examples of circular granularities are hour of the day and day of the week; an example of a quasi-circular granularity is day of the month; examples of aperiodic granularities are public holidays and school holidays.</p>
+<p>Time deconstructions can also be based on the hierarchical structure of time. For example, hours are nested within days, days within weeks, weeks within months, and so on. Hence, it is possible to construct single-order-up granularities such as second of the minute, or multiple-order-up granularities such as second of the hour. The lubridate package <span class="citation">(Grolemund and Wickham <a href="bibliography.html#ref-Grolemund2011-vm" role="doc-biblioref">2011</a>)</span> provides tools to access and manipulate common date-time objects. However, most of its accessor functions are limited to single-order-up granularities.</p>
+<p>The motivation for this work stems from the desire to provide methods to better understand large quantities of measurements on energy usage reported by smart meters in households across Australia, and indeed many parts of the world. Smart meters currently provide half-hourly use in kWh for each household, from the time they were installed, some as early as 2012. Households are distributed geographically and have different demographic properties as well as physical properties such as the existence of solar panels, central heating or air conditioning. The behavioral patterns in households vary substantially; for example, some families use a dryer for their clothes while others hang them on a line, and some households might consist of night owls, while others are morning larks. It is common to see aggregates <span class="citation">(see Goodwin and Dykes <a href="bibliography.html#ref-Goodwin_2012" role="doc-biblioref">2012</a>)</span> of usage across households, such as half-hourly total usage by state, because energy companies need to plan for maximum loads on the network. But studying overall energy use hides the distribution of usage at finer scales, and makes it more difficult to find solutions to improve energy efficiency. We propose that the analysis of smart meter data will benefit from systematically exploring energy consumption by visualizing the probability distributions across different deconstructions of time to find regular patterns and anomalies. Although we were motivated by the smart meter example, the problem and the solutions we propose are practically relevant to any temporal data observed more than once per year. In a broader sense, it could be even suitable for data observed by years, decades, and centuries as might be in weather or astronomical data.</p>
+<p>This work provides tools for systematically exploring bivariate granularities within the tidy workflow (<span class="citation">Wickham and Grolemund (<a href="bibliography.html#ref-wickham2016r" role="doc-biblioref">2016</a>)</span>). In particular, we</p>
+<ul>
+<li>provide a formal characterization of cyclic granularities;</li>
+<li>facilitate manipulation of single- and multiple-order-up time granularities through cyclic calendar algebra;</li>
+<li>develop an approach to check the feasibility of creating plots or drawing inferences for any two cyclic granularities.</li>
+</ul>
+<p>The remainder of the paper is organized as follows: Section  provides some background material on linear granularities and calendar algebra for computing different linear granularities. Section  formally characterizes different cyclic time granularities by extending the framework of linear time granularities, and introducing cyclic calendar algebra for computing cyclic time granularities. The data structure for exploring the conditional distributions of the associated time series across pairs of cyclic time granularities is discussed in Section . Section  discusses the role of different factors in constructing an informative and trustworthy visualization. Section  examines how systematic exploration can be carried out for a temporal and non-temporal application. Finally, we summarize our results and discuss possible future directions in Section .</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="2-ch-calendar-vis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="2-2-sec-algorithm.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="2-ch-gravitas.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="2-2-sec-linear-time.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -251,7 +154,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/earowang/thesis/edit/master/Rmd//02-calendar-vis.Rmd",
+"link": "https://github.com/earowang/thesis/edit/master/Rmd//02-gravitas.Rmd",
 "text": "Edit"
 },
 "history": {

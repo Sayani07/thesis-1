@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A Data dictionary | Tidy tools for supporting fluent workflow in temporal data analysis</title>
-  <meta name="description" content="A Data dictionary | Tidy tools for supporting fluent workflow in temporal data analysis" />
+  <title>A Data dictionary | Visualization and analysis of probability distributions of large temporal data</title>
+  <meta name="description" content="A Data dictionary | Visualization and analysis of probability distributions of large temporal data" />
   <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A Data dictionary | Tidy tools for supporting fluent workflow in temporal data analysis" />
+  <meta property="og:title" content="A Data dictionary | Visualization and analysis of probability distributions of large temporal data" />
   <meta property="og:type" content="book" />
   
   
@@ -16,12 +16,12 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A Data dictionary | Tidy tools for supporting fluent workflow in temporal data analysis" />
+  <meta name="twitter:title" content="A Data dictionary | Visualization and analysis of probability distributions of large temporal data" />
   
   
   
 
-<meta name="author" content="Earo Wang" />
+<meta name="author" content="Sayani Gupta" />
 
 
 
@@ -46,71 +46,9 @@
 
 
 
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <link rel="stylesheet" href="template/style.css" type="text/css" />
 </head>
@@ -132,39 +70,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
 <li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
 <li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="1-ch-intro.html"><a href="1-ch-intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
-<li class="chapter" data-level="1.1" data-path="1-1-sec-calendar-vis.html"><a href="1-1-sec-calendar-vis.html"><i class="fa fa-check"></i><b>1.1</b> Calendar-based graphics</a></li>
-<li class="chapter" data-level="1.2" data-path="1-2-sec-tsibble.html"><a href="1-2-sec-tsibble.html"><i class="fa fa-check"></i><b>1.2</b> Tidy temporal data structure</a></li>
-<li class="chapter" data-level="1.3" data-path="1-3-sec-mists.html"><a href="1-3-sec-mists.html"><i class="fa fa-check"></i><b>1.3</b> Missingness in time</a></li>
-<li class="chapter" data-level="1.4" data-path="1-4-summary.html"><a href="1-4-summary.html"><i class="fa fa-check"></i><b>1.4</b> Summary</a></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="2-ch-calendar-vis.html"><a href="2-ch-calendar-vis.html"><i class="fa fa-check"></i><b>2</b> Calendar-based graphics for visualizing people’s daily schedules</a><ul>
+<li class="chapter" data-level="1" data-path="1-ch-intro.html"><a href="1-ch-intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="2-ch-gravitas.html"><a href="2-ch-gravitas.html"><i class="fa fa-check"></i><b>2</b> Calendar-based graphics for visualizing people’s daily schedules</a><ul>
 <li class="chapter" data-level="2.1" data-path="2-1-introduction.html"><a href="2-1-introduction.html"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
-<li class="chapter" data-level="2.2" data-path="2-2-sec-algorithm.html"><a href="2-2-sec-algorithm.html"><i class="fa fa-check"></i><b>2.2</b> Creating a calendar display</a></li>
-<li class="chapter" data-level="2.3" data-path="2-3-sec-case.html"><a href="2-3-sec-case.html"><i class="fa fa-check"></i><b>2.3</b> Case study</a></li>
-<li class="chapter" data-level="2.4" data-path="2-4-sec-discussion.html"><a href="2-4-sec-discussion.html"><i class="fa fa-check"></i><b>2.4</b> Discussion</a></li>
-<li class="chapter" data-level="" data-path="acknowledgements-1.html"><a href="acknowledgements-1.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="3-ch-tsibble.html"><a href="3-ch-tsibble.html"><i class="fa fa-check"></i><b>3</b> A new tidy data structure to support exploration and modeling of temporal data</a><ul>
-<li class="chapter" data-level="3.1" data-path="3-1-sec-intro.html"><a href="3-1-sec-intro.html"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
-<li class="chapter" data-level="3.2" data-path="3-2-sec-str.html"><a href="3-2-sec-str.html"><i class="fa fa-check"></i><b>3.2</b> Data structures</a></li>
-<li class="chapter" data-level="3.3" data-path="3-3-sec-semantics.html"><a href="3-3-sec-semantics.html"><i class="fa fa-check"></i><b>3.3</b> Contextual semantics</a></li>
-<li class="chapter" data-level="3.4" data-path="3-4-sec-pipeline.html"><a href="3-4-sec-pipeline.html"><i class="fa fa-check"></i><b>3.4</b> Temporal data pipelines</a></li>
-<li class="chapter" data-level="3.5" data-path="3-5-sec-software.html"><a href="3-5-sec-software.html"><i class="fa fa-check"></i><b>3.5</b> Software structure and design decisions</a></li>
-<li class="chapter" data-level="3.6" data-path="3-6-sec-cases.html"><a href="3-6-sec-cases.html"><i class="fa fa-check"></i><b>3.6</b> Case studies</a></li>
-<li class="chapter" data-level="3.7" data-path="3-7-sec-conclusion.html"><a href="3-7-sec-conclusion.html"><i class="fa fa-check"></i><b>3.7</b> Conclusion and future work</a></li>
+<li class="chapter" data-level="2.2" data-path="2-2-sec-linear-time.html"><a href="2-2-sec-linear-time.html"><i class="fa fa-check"></i><b>2.2</b> Linear time granularities</a></li>
+<li class="chapter" data-level="2.3" data-path="2-3-sec-cyclic-gran.html"><a href="2-3-sec-cyclic-gran.html"><i class="fa fa-check"></i><b>2.3</b> Cyclic time granularities</a></li>
+<li class="chapter" data-level="2.4" data-path="2-4-sec-data-structure.html"><a href="2-4-sec-data-structure.html"><i class="fa fa-check"></i><b>2.4</b> Data structure</a></li>
+<li class="chapter" data-level="2.5" data-path="2-5-sec-visualization.html"><a href="2-5-sec-visualization.html"><i class="fa fa-check"></i><b>2.5</b> Visualization</a></li>
+<li class="chapter" data-level="2.6" data-path="2-6-sec-application.html"><a href="2-6-sec-application.html"><i class="fa fa-check"></i><b>2.6</b> Applications</a></li>
+<li class="chapter" data-level="2.7" data-path="2-7-sec-discussion.html"><a href="2-7-sec-discussion.html"><i class="fa fa-check"></i><b>2.7</b> Discussion</a></li>
 <li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
+<li class="chapter" data-level="2.8" data-path="2-8-supplementary-materials.html"><a href="2-8-supplementary-materials.html"><i class="fa fa-check"></i><b>2.8</b> Supplementary Materials</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="4-ch-mists.html"><a href="4-ch-mists.html"><i class="fa fa-check"></i><b>4</b> Data representation, visual and analytical techniques for demystifying temporal missing data</a><ul>
-<li class="chapter" data-level="4.1" data-path="4-1-sec-mists-intro.html"><a href="4-1-sec-mists-intro.html"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
-<li class="chapter" data-level="4.2" data-path="4-2-sec-mists-categories.html"><a href="4-2-sec-mists-categories.html"><i class="fa fa-check"></i><b>4.2</b> Categories of temporal missing data</a></li>
-<li class="chapter" data-level="4.3" data-path="4-3-sec-mists-na-rle.html"><a href="4-3-sec-mists-na-rle.html"><i class="fa fa-check"></i><b>4.3</b> New data abstraction and operations for missing data in time</a></li>
-<li class="chapter" data-level="4.4" data-path="4-4-sec-mists-vis.html"><a href="4-4-sec-mists-vis.html"><i class="fa fa-check"></i><b>4.4</b> Visual methods for exploring temporal missingness</a></li>
-<li class="chapter" data-level="4.5" data-path="4-5-sec-mists-polish.html"><a href="4-5-sec-mists-polish.html"><i class="fa fa-check"></i><b>4.5</b> Scaling up to large collections of temporal data</a></li>
-<li class="chapter" data-level="4.6" data-path="4-6-sec-mists-data.html"><a href="4-6-sec-mists-data.html"><i class="fa fa-check"></i><b>4.6</b> Applications</a></li>
-<li class="chapter" data-level="4.7" data-path="4-7-sec-mists-conclusion.html"><a href="4-7-sec-mists-conclusion.html"><i class="fa fa-check"></i><b>4.7</b> Conclusion</a></li>
-<li class="chapter" data-level="" data-path="acknowledgements-2.html"><a href="acknowledgements-2.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
-</ul></li>
+<li class="chapter" data-level="3" data-path="3-ch-tsibble.html"><a href="3-ch-tsibble.html"><i class="fa fa-check"></i><b>3</b> A new tidy data structure to support exploration and modeling of temporal data</a></li>
+<li class="chapter" data-level="4" data-path="4-ch-mists.html"><a href="4-ch-mists.html"><i class="fa fa-check"></i><b>4</b> Data representation, visual and analytical techniques for demystifying temporal missing data</a></li>
 <li class="chapter" data-level="5" data-path="5-ch-conclusion.html"><a href="5-ch-conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion and future plans</a><ul>
 <li class="chapter" data-level="5.1" data-path="5-1-software-development.html"><a href="5-1-software-development.html"><i class="fa fa-check"></i><b>5.1</b> Software development</a></li>
 <li class="chapter" data-level="5.2" data-path="5-2-future-work.html"><a href="5-2-future-work.html"><i class="fa fa-check"></i><b>5.2</b> Future work</a></li>
@@ -185,7 +104,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Tidy tools for supporting fluent workflow in temporal data analysis</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Visualization and analysis of probability distributions of large temporal data</a>
           </h1>
         </div>
 
@@ -195,303 +114,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="data-dictionary" class="section level1">
 <h1><span class="header-section-number">A</span> Data dictionary</h1>
-<table>
-<caption>
-<span id="tab:wdi-data-dict">Table A.1: </span>Data dictionary for the World Development Indicators.
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-Series Code
-</th>
-<th style="text-align:left;">
-Series Name
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-sp_ado_tfrt
-</td>
-<td style="text-align:left;">
-Adolescent fertility rate (births per 1,000 women ages 15-19)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-nv_agr_totl_zs
-</td>
-<td style="text-align:left;">
-Agriculture, forestry, and fishing, value added (% of GDP)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-er_h2o_fwtl_zs
-</td>
-<td style="text-align:left;">
-Annual freshwater withdrawals, total (% of internal resources)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sh_sta_brtc_zs
-</td>
-<td style="text-align:left;">
-Births attended by skilled health staff (% of total)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-en_atm_co2e_pc
-</td>
-<td style="text-align:left;">
-CO2 emissions (metric tons per capita)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sp_dyn_conu_zs
-</td>
-<td style="text-align:left;">
-Contraceptive prevalence, any methods (% of women ages 15-49)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-fs_ast_doms_gd_zs
-</td>
-<td style="text-align:left;">
-Domestic credit provided by financial sector (% of GDP)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-eg_use_elec_kh_pc
-</td>
-<td style="text-align:left;">
-Electric power consumption (kWh per capita)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-eg_use_pcap_kg_oe
-</td>
-<td style="text-align:left;">
-Energy use (kg of oil equivalent per capita)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-ne_exp_gnfs_zs
-</td>
-<td style="text-align:left;">
-Exports of goods and services (% of GDP)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-dt_dod_dect_cd
-</td>
-<td style="text-align:left;">
-External debt stocks, total (DOD, current US<span class="math inline">\() &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; sp_dyn_tfrt_in &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Fertility rate, total (births per woman) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; bx_klt_dinv_cd_wd &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Foreign direct investment, net inflows (BoP, current US\)</span>)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-ag_lnd_frst_k2
-</td>
-<td style="text-align:left;">
-Forest area (sq. km)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-ny_gdp_mktp_cd
-</td>
-<td style="text-align:left;">
-GDP (current US<span class="math inline">\() &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; ny_gdp_mktp_kd_zg &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; GDP growth (annual %) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; ny_gnp_pcap_cd &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; GNI per capita, Atlas method (current US\)</span>)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-ny_gnp_pcap_pp_cd
-</td>
-<td style="text-align:left;">
-GNI per capita, PPP (current international <span class="math inline">\() &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; ny_gnp_atls_cd &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; GNI, Atlas method (current US\)</span>)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-ny_gnp_mktp_pp_cd
-</td>
-<td style="text-align:left;">
-GNI, PPP (current international <span class="math inline">\() &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; ne_gdi_totl_zs &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Gross capital formation (% of GDP) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; tx_val_tech_mf_zs &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; High-technology exports (% of manufactured exports) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; sh_imm_meas &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Immunization, measles (% of children ages 12-23 months) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; ne_imp_gnfs_zs &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Imports of goods and services (% of GDP) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; si_dst_frst_20 &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Income share held by lowest 20% &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; nv_ind_totl_zs &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Industry (including construction), value added (% of GDP) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; ny_gdp_defl_kd_zg &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Inflation, GDP deflator (annual %) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; sp_dyn_le00_in &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Life expectancy at birth, total (years) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; tg_val_totl_gd_zs &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Merchandise trade (% of GDP) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; ms_mil_xpnd_gd_zs &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Military expenditure (% of GDP) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; it_cel_sets_p2 &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Mobile cellular subscriptions (per 100 people) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; sh_dyn_mort &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Mortality rate, under-5 (per 1,000 live births) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; tt_pri_mrch_xd_wd &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Net barter terms of trade index (2000 = 100) &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; sm_pop_netm &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Net migration &lt;/td&gt;  &lt;/tr&gt;  &lt;tr&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; dt_oda_alld_cd &lt;/td&gt;  &lt;td style=&quot;text-align:left;&quot;&gt; Net official development assistance and official aid received (current US\)</span>)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-bx_trf_pwkr_cd_dt
-</td>
-<td style="text-align:left;">
-Personal remittances, received (current US$)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-en_pop_dnst
-</td>
-<td style="text-align:left;">
-Population density (people per sq. km of land area)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sp_pop_grow
-</td>
-<td style="text-align:left;">
-Population growth (annual %)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sp_pop_totl
-</td>
-<td style="text-align:left;">
-Population, total
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-si_pov_dday
-</td>
-<td style="text-align:left;">
-Poverty headcount ratio at $1.90 a day (2011 PPP) (% of population)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-si_pov_nahc
-</td>
-<td style="text-align:left;">
-Poverty headcount ratio at national poverty lines (% of population)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sh_dyn_aids_zs
-</td>
-<td style="text-align:left;">
-Prevalence of HIV, total (% of population ages 15-49)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sh_sta_maln_zs
-</td>
-<td style="text-align:left;">
-Prevalence of underweight, weight for age (% of children under 5)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-se_prm_cmpt_zs
-</td>
-<td style="text-align:left;">
-Primary completion rate, total (% of relevant age group)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-gc_rev_xgrt_gd_zs
-</td>
-<td style="text-align:left;">
-Revenue, excluding grants (% of GDP)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-se_prm_enrr
-</td>
-<td style="text-align:left;">
-School enrollment, primary (% gross)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-se_enr_prsc_fm_zs
-</td>
-<td style="text-align:left;">
-School enrollment, primary and secondary (gross), gender parity index (GPI)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-se_sec_enrr
-</td>
-<td style="text-align:left;">
-School enrollment, secondary (% gross)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-iq_sci_ovrl
-</td>
-<td style="text-align:left;">
-Statistical Capacity score (Overall average)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-ag_srf_totl_k2
-</td>
-<td style="text-align:left;">
-Surface area (sq. km)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-gc_tax_totl_gd_zs
-</td>
-<td style="text-align:left;">
-Tax revenue (% of GDP)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-er_ptd_totl_zs
-</td>
-<td style="text-align:left;">
-Terrestrial and marine protected areas (% of total territorial area)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-ic_reg_durs
-</td>
-<td style="text-align:left;">
-Time required to start a business (days)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-dt_tds_dect_ex_zs
-</td>
-<td style="text-align:left;">
-Total debt service (% of exports of goods, services and primary income)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-sp_urb_grow
-</td>
-<td style="text-align:left;">
-Urban population growth (annual %)
-</td>
-</tr>
-</tbody>
-</table>
 
 
 </div>
