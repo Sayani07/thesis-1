@@ -1,0 +1,161 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Copyright notice}{v}{chapter*.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abstract}{vii}{chapter*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Declaration}{ix}{chapter*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acknowledgements}{xi}{chapter*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Preface}{xiii}{chapter*.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Open and reproducible research}{xiii}{chapter*.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{License}{xiii}{chapter*.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Visualizing probability distributions across bivariate cyclic temporal granularities}{3}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Detecting distributional differences between temporal granularities for exploratory time series analysis}{4}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Clustering time series based on probability distributions across temporal granularities}{4}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Summary}{5}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Visualizing probability distributions across bivariate cyclic temporal granularities}{7}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Introduction}{8}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Linear time granularities}{10}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Definitions}{10}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Relativities}{11}{subsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Cyclic time granularities}{13}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Circular granularities}{13}{subsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Quasi-circular granularities}{15}{subsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Aperiodic granularities}{16}{subsection.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}Relativities}{17}{subsection.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.5}Computation}{18}{subsection.2.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Single-to-multiple order-up}{18}{subsection.2.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Multiple-to-single order-up}{20}{table.caption.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Multiple order-up quasi-circular granularities}{20}{equation.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Data structure}{21}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Harmonies and clashes}{21}{subsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Near-clashes}{22}{subsection.2.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Visualization}{23}{section.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.1}Data summarization}{23}{subsection.2.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Display choices for univariate distributions}{23}{subsection.2.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.3}Comparison across sub-groups induced by conditioning}{24}{subsection.2.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Levels}{24}{subsection.2.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Synergy of cyclic granularities}{24}{subsection.2.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Conditioning variable}{25}{figure.caption.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Applications}{25}{section.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.1}Smart meter data of Australia}{25}{subsection.2.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Cyclic granularities search and computation}{25}{subsection.2.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screening and visualizing harmonies}{26}{subsection.2.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.2}T20 cricket data of Indian Premier League}{27}{subsection.2.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}Discussion}{29}{section.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Acknowledgments}{30}{section.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Supplementary Materials}{30}{section.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Detecting distributional differences between temporal granularities for exploratory time series analysis}{35}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduction}{36}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Proposed distance measure}{39}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Principle}{39}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Notations}{40}{subsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}Computation}{42}{subsection.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Data transformation}{42}{subsubsection*.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Characterising distributions}{43}{subsubsection*.24}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Distance between distributions}{43}{subsubsection*.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Within-facet and between-facet distances}{44}{subsubsection*.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Tuning parameter}{44}{subsubsection*.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Raw distance measure}{44}{subsubsection*.28}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Adjusting for the number of comparisons}{45}{subsubsection*.29}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Ranking and selection of cyclic granularities}{48}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Selection}{48}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Ranking}{49}{subsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Simulations}{50}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Behavior of raw and adjusted distance measures}{50}{subsection.3.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Choosing threshold}{51}{subsection.3.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Environment}{53}{subsection.3.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Application to residential smart meter dataset}{53}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}Discussion}{57}{section.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Acknowledgments}{58}{section.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Supplementary Materials}{58}{section.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Data representation, visual and analytical techniques for demystifying temporal missing data}{59}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusion and future plans}{61}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Software development}{61}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}sugrrants}{61}{subsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}tsibble}{63}{subsection.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.3}mists}{63}{subsection.5.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Future work}{63}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Process for generating missing data in time}{63}{subsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Visual methods for temporal data of nesting and crossing interactions}{64}{subsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Final words}{65}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Data dictionary}{67}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{69}{appendix*.39}%
